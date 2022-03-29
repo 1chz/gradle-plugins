@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"io.github.shirohoo.plugin","c":"JpaPlugin","l":"apply(Project)","u":"apply(org.gradle.api.Project)"},{"p":"io.github.shirohoo.plugin","c":"JpaPlugin","l":"JpaPlugin()","u":"%3Cinit%3E()"}];updateSearchResults();

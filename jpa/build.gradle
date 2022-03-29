@@ -1,0 +1,31 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'maven-publish'
+    id 'com.gradle.plugin-publish' version '0.20.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'javax.persistence:javax.persistence-api:2.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+}
+
+pluginBundle {
+    website = 'https://github.com/shirohoo/gradle-plugins'
+    vcsUrl = 'https://github.com/shirohoo/gradle-plugins'
+    tags = ['jpa']
+}
+
+gradlePlugin {
+    plugins {
+        jpaPlugin {
+            id = 'io.github.shirohoo.plugin.jpa'
+            description = 'Plugin for generating JPA entities default constructors.'
+            implementationClass = 'io.github.shirohoo.plugin.JpaPlugin'
+        }
+    }
+}
